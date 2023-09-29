@@ -152,10 +152,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@permaweb/ao-sdk@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@permaweb/ao-sdk/-/ao-sdk-0.0.5.tgz#83fcb5c99fa615605761573c2529f9c9ec28defb"
-  integrity sha512-DpY7cdW5dIT+WrNNeA3aULLrBxHywVL3w2/7vPpYwaWChALC4VUcfDFjldRNtw+1m8Aj9I3K0TGAN4QJK4qpeQ==
+"@permaweb/ao-sdk@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@permaweb/ao-sdk/-/ao-sdk-0.0.6.tgz#c8982bd87f7bc94b544bb15a1896789fd74050db"
+  integrity sha512-VHljMTqmcK1tNArWE0S3P+/eZeP1fEymZkFBQm7+HjNA6Su6QZgnz8ZpIzbHWWqNyTKN4uBVvEGKgA9D/NNrrQ==
   dependencies:
     buffer "^6.0.3"
     debug "^4.3.4"

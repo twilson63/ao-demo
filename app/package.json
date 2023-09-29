@@ -13,6 +13,6 @@
     "build": "node build.js"
   },
   "dependencies": {
-    "@permaweb/ao-sdk": "^0.0.5"
+    "@permaweb/ao-sdk": "^0.0.6"
   }
 }

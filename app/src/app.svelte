@@ -9,6 +9,8 @@
   // contract src
   let src = "dfccC-_ih0Xl2_zhj8pTIUZF03QNfV2xu68pVzxSIQ0";
   let contracts = {};
+  let contractState = null;
+
   async function doCreateContract(name) {
     if (globalThis.arweaveWallet) {
       await globalThis.arweaveWallet.connect(["SIGN_TRANSACTION"]);
@@ -21,6 +23,17 @@
       []
     );
     console.log(result);
+  }
+
+  async function doReadState(contract) {
+    globalThis.DEBUG = "*";
+    console.log(contract);
+    try {
+      const result = await readState(contract);
+      contractState = result;
+    } catch (e) {
+      console.log(e);
+    }
   }
 </script>
 
@@ -47,3 +60,11 @@
     <button>Send</button>
   </form>
 </div>
+<hr />
+<button
+  on:click={() => doReadState("N4W3Aw5H-iJYbhm24CEXv0ULjJA_-ilgO053Yk9pzgg")}
+  >ReadState</button
+>
+{#if contractState}
+  <div>JSON.stringify(contractState)</div>
+{/if}
